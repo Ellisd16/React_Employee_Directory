@@ -1,8 +1,7 @@
 import React from "react";
-
+import "./style.css";
 //So here I'll be making the card to hold the employee information
-//How should I do this?
-//Create a div to begin with
+
 
 function Card(props) {
     return <div className="card">
@@ -10,6 +9,9 @@ function Card(props) {
             <li>{props.picture.medium}</li>
             <li>{props.first}{props.last}</li>
             <li>{props.gender}</li>
+            <li>{props.phone}</li>
+            <li>{props.email}</li>
+
         </ul>
     </div>
 };
