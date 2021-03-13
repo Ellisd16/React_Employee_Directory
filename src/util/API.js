@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const BASEURL = "https://randomuser.me/api/?inc=gender,name,email,picture";
+
 export default {
     getRandomUsers: function () {
-        return axios.get("https://randomuser.me/api/?results=10")
+        return axios.get(BASEURL)
     }
 }

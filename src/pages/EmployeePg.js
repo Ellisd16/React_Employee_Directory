@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Container from "../components/Container/index";
 import Card from "../components/Card/index"
-import SearchForm from "../components/SearchForm";
-import EmployeeList from "../components/EmployeeList"
+import SearchForm from "../components/Search";
 import Header from "../components/Header/index";
 import API from "../util/API";
 
@@ -13,6 +12,8 @@ import API from "../util/API";
 // Maybe I should start from there, and work my way up
 
 class EmployeePg extends Component {
+
+    //I need to create a handlesubmitform function on here
 
     //Here I'll render the page
     render() {
