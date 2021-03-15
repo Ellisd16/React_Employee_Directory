@@ -6,7 +6,7 @@ import "./style.css";
 function Card(props) {
     return <div className="card">
         <ul>
-            <li>{props.picture.medium}</li>
+            <li><img alt={props.last} src={props.image.medium}></img></li>
             <li>{props.first}{props.last}</li>
             <li>{props.gender}</li>
             <li>{props.phone}</li>
