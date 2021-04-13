@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Container from "../src/components/Container";
+import Wrapper from "./components/Wrapper";
 import Card from "../src/components/Card"
 import SearchForm from "../src/components/Search";
 import Header from "../src/components/Header";
-import API from "../src/util/API";
+// import API from "../src/util/API";
 
 //Ok so what do I need to import from here
 
@@ -17,30 +17,28 @@ class App extends Component {
         employees: [],
     }
 
-    componentDidMount() {
-        API.getRandomUsers()
-            .then(res => this.setState({ employees: res.data.results }))
-            .catch(err => console.log(err))
-    }
-    //I need to create a handlesubmitform function on here
-    handleInputChange = event => {
-        this.setState({ search: event.target.value });
-    };
-    //Here I'll render the page
-    handleFormSubmit = event => {
-        event.preventDefault();
-        Api
-    }
+    // componentDidMount() {
+    //     API.getRandomUsers()
+    //         .then(res => this.setState({ employees: res.data.results }))
+    //         .catch(err => console.log(err))
+    // }
+    // //I need to create a handlesubmitform function on here
+    // handleInputChange = event => {
+    //     this.setState({ search: event.target.value });
+    // };
+    // //Here I'll render the page
+    // handleFormSubmit = event => {
+    //     event.preventDefault();
+    //     Api
+    // }
     render() {
         return (
             <div>
-                <Container>
-                    <Header></Header>
-                    <SearchForm>
-
-                    </SearchForm>
-                    <Card></Card>
-                </Container>
+                <Wrapper>
+                    <Header />
+                    <SearchForm />
+                    <Card />
+                </Wrapper>
             </div>
         )
     }

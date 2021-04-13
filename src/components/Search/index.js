@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 function SearchForm(props) {
+    const [employees, setEmployees] = useState([])
+    const [search, setSearch] = useState("");
+
+    function getResults() {
+        const searchResult = employees.filter(employee => search.indexOf(employee.name.first) > -1 || search.indexOf(employee.name.last) > -1);
+        console.log(searchResult);
+        setEmployees(searchResult)
+    }
+
+    function clearForm() {
+        setSearch("");
+
+    }
+
+
+
+
+
+
     return (
         <form className="search">
             <div>
