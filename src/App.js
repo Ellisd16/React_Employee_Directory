@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import employees from "./util/employee.json";
 import Search from "./components/Search";
+import "./components/App.css"
 
 class App extends Component {
     // Setting this.state.friends to the friends json array
