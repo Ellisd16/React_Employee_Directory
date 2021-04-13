@@ -1,48 +1,40 @@
 import React, { Component } from "react";
+import EmployeeCard from "./components/EmployeeCard";
 import Wrapper from "./components/Wrapper";
-import Card from "../src/components/Card"
-import SearchForm from "../src/components/Search";
-import Header from "../src/components/Header";
-// import API from "../src/util/API";
+import Title from "./components/Title";
+import employees from "./util/employee.json";
+import Search from "./components/Search";
 
-//Ok so what do I need to import from here
-
-//On this page, I am building the main page
-//i need to import my : {header, search bar, and employee list}
-// Maybe I should start from there, and work my way up
-
-//I need to make the API call on here
 class App extends Component {
+    // Setting this.state.friends to the friends json array
     state = {
-        employees: [],
-    }
+        employees
+    };
 
-    // componentDidMount() {
-    //     API.getRandomUsers()
-    //         .then(res => this.setState({ employees: res.data.results }))
-    //         .catch(err => console.log(err))
-    // }
-    // //I need to create a handlesubmitform function on here
-    // handleInputChange = event => {
-    //     this.setState({ search: event.target.value });
-    // };
-    // //Here I'll render the page
-    // handleFormSubmit = event => {
-    //     event.preventDefault();
-    //     Api
-    // }
+
+
+    // Map over this.state.friends and render a EmployeeCard component for each friend object
     render() {
         return (
-            <div>
-                <Wrapper>
-                    <Header />
-                    <SearchForm />
-                    <Card />
-                </Wrapper>
-            </div>
-        )
+            <Wrapper>
+                <Search></Search>
+                <Title>Current Employees</Title>
+
+                {this.state.employees.map(employee => (
+                    <EmployeeCard
+
+                        id={employee.id}
+                        key={employee.id}
+                        name={employee.name}
+                        image={employee.image}
+                        occupation={employee.occupation}
+                        location={employee.location}
+                        email={employee.email}
+                    />
+                ))}
+            </Wrapper>
+        );
     }
 }
-
 
 export default App;
