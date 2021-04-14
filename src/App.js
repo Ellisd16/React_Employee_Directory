@@ -1,10 +1,9 @@
-
+import "./App.css"
 import Title from "./components/Title";
 // import List from "./components/List";
 import SearchBar from "./components/SearchBar"
 import React, { Component } from "react";
 import EmployeeCard from "./components/EmployeeCard";
-
 import employees from "./util/employee.json";
 import Wrapper from "./components/Wrapper";
 
@@ -60,29 +59,32 @@ class App extends Component {
 
   render() {
     return (
+      <div className="App">
+        <Wrapper>
 
-      <Wrapper>
-        <Title>Current Employees</Title>
-        <SearchBar
-          employee={this.state.employee}
-          searchEmployee={this.searchEmployee}
-          handleInputChange={this.handleInputChange}
-        // handleInputChange={this.handleInputChange}
-        />
-        <button onClick={this.sortByJob}>Job</button>
-        {this.state.employees.map(employee => (
-          <EmployeeCard
-            sortByJob={this.sortByJob}
-
-            id={employee.id}
-            key={employee.id}
-            name={employee.name}
-            image={employee.image}
-            occupation={employee.occupation}
-            location={employee.location}
+          <SearchBar
+            employee={this.state.employee}
+            searchEmployee={this.searchEmployee}
+            handleInputChange={this.handleInputChange}
+          // handleInputChange={this.handleInputChange}
           />
-        ))}
-      </Wrapper>
+          <button onClick={this.sortByJob}>Job</button>
+          <Title>Current Employees</Title>
+          {this.state.employees.map(employee => (
+            <EmployeeCard
+              sortByJob={this.sortByJob}
+
+              id={employee.id}
+              key={employee.id}
+              name={employee.name}
+              image={employee.image}
+              occupation={employee.occupation}
+              location={employee.location}
+            />
+          ))}
+        </Wrapper>
+      </div>
+
     )
   }
 }

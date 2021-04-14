@@ -1,9 +1,10 @@
 import React from "react";
+import "./index.css";
 
 
 function EmployeeCard(props) {
     return (
-        <div className="containter">
+        <div id="containter">
 
 
             <div className="card">

@@ -19,5 +19,40 @@
         "image": "https://cdn.costumewall.com/wp-content/uploads/2018/09/ongo-gablogian.jpg",
         "occupation": "Art Extraordinare",
         "location": "Philadelphia"
+    },
+    {
+        "id": 4,
+        "name": "Boba Fett",
+        "image": "https://cdn.vox-cdn.com/thumbor/-bGj0LbFrXiEWZowNaxyk6twxlg=/0x0:1024x576/1220x813/filters:focal(431x207:593x369):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/68482055/the_mandalorian_chapter_14_still_TALL_th4779uhg_1024x576.0.jpg",
+        "occupation": "Bounty Hunter",
+        "location": "Tatooine"
+    },
+    {
+        "id": 5,
+        "name": "Charlie Kelly",
+        "image": "https://images.8tracks.com/cover/i/009/170/391/pepe-8679.jpg?rect=88,0,429,429&q=98&fm=jpg&fit=max",
+        "occupation": "Bird Law Professional Lawyer",
+        "location": "Philadelphia"
+    },
+    {
+        "id": 6,
+        "name": "Wonder Woman",
+        "image": "https://cdn.vox-cdn.com/thumbor/urwRe0Tnx1PMPD6_vDlfGqsQuQ0=/0x0:1280x640/1220x813/filters:focal(467x58:671x262):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/55115281/wonderwoman2.0.jpg",
+        "occupation": "Super Hero",
+        "location": "Themyscira"
+    },
+    {
+        "id": 7,
+        "name": "Godzilla",
+        "image": "https://officialvgme.files.wordpress.com/2014/08/gc_cast07.jpg?w=200",
+        "occupation": "Kaiju",
+        "location": "Japan"
+    },
+    {
+        "id": 8,
+        "name": "Daredevil",
+        "image": "https://static.wikia.nocookie.net/disney/images/f/fb/Daredevil_-_Season_1.jpg/revision/latest?cb=20200613202639",
+        "occupation": "Super Hero",
+        "location": "Hell's Kitchen"
     }
 ]
