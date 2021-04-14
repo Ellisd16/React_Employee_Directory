@@ -4,35 +4,22 @@ import React from "react";
 function EmployeeCard(props) {
     return (
         <div className="card">
+            <button onClick={props.sortByJob}>Job</button>
             <div className="img-container">
                 <img alt={props.name} src={props.image} />
             </div>
             <div className="content">
-                <table>
-                    <tr>
-
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Occupation
-                        </th>
-                        <th>
-                            Location
-                        </th>
-                        <th>
-                            Email
-                        </th>
-                    </tr>
-                    <tr>
-
-                        <td>{props.name}</td>
-                        <td>{props.occupation}</td>
-                        <td>{props.location}</td>
-                        <td>{props.email}</td>
-                    </tr>
-
-                </table>
+                <ul>
+                    <li>
+                        <strong>Name:</strong> {props.name}
+                    </li>
+                    <li>
+                        <strong>Occupation:</strong> {props.occupation}
+                    </li>
+                    <li>
+                        <strong>Location:</strong> {props.location}
+                    </li>
+                </ul>
             </div>
         </div>
     );

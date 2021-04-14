@@ -4,23 +4,20 @@
         "name": "SpongeBob",
         "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
         "occupation": "Fry Cook",
-        "location": "A Pineapple Under the Sea",
-        "email": "bobsponge98@gmail.com"
+        "location": "A Pineapple Under the Sea"
     },
     {
         "id": 2,
         "name": "Batman",
         "image": "https://i.ytimg.com/vi/RsYA8Gr5NTY/hqdefault.jpg",
         "occupation": "Super Hero",
-        "location": "Gotham City",
-        "email": "notBruceWanye@yahoo.com"
+        "location": "Gotham City"
     },
     {
         "id": 3,
         "name": "Ongo Gablogian",
         "image": "https://cdn.costumewall.com/wp-content/uploads/2018/09/ongo-gablogian.jpg",
         "occupation": "Art Extraordinare",
-        "location": "Philadelphia",
-        "email": "paddyspub@aol.com"
+        "location": "Philadelphia"
     }
 ]
