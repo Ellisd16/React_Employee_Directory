@@ -15,12 +15,9 @@ class App extends Component {
     filteredEmployees: [],
     search: "",
   };
-  // componentDidMount(res) {
-  //   this.setState({
-  //     employees: employees,
-  //     // filteredEmployees: ""
-  //   }).catch(err => console.log(err))
-  // }
+  componentDidMount() {
+    console.log(this.state)
+  }
   searchEmployee = name => {
     // Filter this.state.employees for employees with an id not equal to the id being removed
     const employees = this.state.employees.filter(employee => employee.name !== name);
@@ -42,14 +39,17 @@ class App extends Component {
   };
 
   sortByJob = () => {
-    const filter = this.state.filteredEmployees;
+    const filter = this.state.employees;
+    console.log(filter);
     const order = filter.sort((a, b) => (a.occupation > b.occupation) ? -1 : 1)
     console.log(order)
 
     this.setState({
       filteredEmployees: order,
       // employees: filteredEmployees
+
     })
+    console.log(this.state)
   }
   // resetSearch = event => {
   //   this.setState(
@@ -69,6 +69,7 @@ class App extends Component {
           handleInputChange={this.handleInputChange}
         // handleInputChange={this.handleInputChange}
         />
+        <button onClick={this.sortByJob}>Job</button>
         {this.state.employees.map(employee => (
           <EmployeeCard
             sortByJob={this.sortByJob}
