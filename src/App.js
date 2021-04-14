@@ -9,16 +9,37 @@ import "./components/App.css"
 class App extends Component {
     // Setting this.state.friends to the friends json array
     state = {
-        employees
+        employees,
+        result: {},
+        search: "",
     };
-
+    searchEmployee = () => {
+        employees.search()
+            .then(res => this.setState({ result: res.data }))
+            .catch(err => console.log(err));
+    };
+    handleInputChange = event => {
+        const value = event.target.value;
+        const name = event.target.name;
+        this.setState({
+            [name]: value
+        });
+    };
+    handleFormSubmit = event => {
+        event.preventDefault();
+        this.searchEmployee(this.state.search);
+    };
 
 
     // Map over this.state.friends and render a EmployeeCard component for each friend object
     render() {
         return (
             <Wrapper>
-                <Search></Search>
+                <Search
+                    value={this.state.search}
+                    handleInputChange={this.handleInputChange}
+                    handleFormSubmit={this.handleFormSubmit}
+                />
                 <Title>Current Employees</Title>
 
                 {this.state.employees.map(employee => (
