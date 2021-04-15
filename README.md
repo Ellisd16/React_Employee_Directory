@@ -14,4 +14,4 @@
 Learning how to manipulate state through different levels of components proved to be somewhat difficult, but I was able to get the app fully functional.
 
 ## Future Developments 
-I want to make it so that if you delete what you had in the search bar, it will revert back to the intial state of the page. 
+I want to make it so that if you delete what you had in the search bar, it will revert back to the intial state of the page. Also, creating a server so that I can deploy this to Heroku would be sweet! 
