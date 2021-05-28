@@ -20,3 +20,13 @@ Learning how to manipulate state through different levels of components proved t
 
 ## Future Developments 
 I want to make it so that if you delete what you had in the search bar, it will revert back to the intial state of the page. Also, creating a server so that I can deploy this to Heroku would be sweet! 
+
+## Installation
+
+Download the code for this repo through Github!
+
+cd into the file location and enter "npm start" into the terminal!
+
+## Questions
+
+If you have any questions, feel free to email me at ellisdelgado13@gmail.com
